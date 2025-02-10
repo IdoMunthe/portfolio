@@ -76,17 +76,21 @@ nav,
 .nav-links {
   display: flex;
   align-items: center;
+  /* background: red; */
 }
 
 nav {
   justify-content: space-around;
-  height: 17vh;
+  height: 7vh;
+  padding: 10px 0;
+  padding-bottom: 5rem;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  justify-content: space-around;
 }
 
 nav li:last-child {
