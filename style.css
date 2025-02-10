@@ -469,14 +469,6 @@ article .icon {
   object-fit: contain;
 }
 
-#project-img4 {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-}
-
 .project-title {
   margin: 1rem;
   color: var(--secondary-color);
@@ -531,7 +523,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  /* height: 26vh; */
+  height: 10vh;
   margin: 0 1rem;
 }
 
