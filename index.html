@@ -53,7 +53,7 @@
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Ido Munthe</h1>
-      <p class="section__text__p2">Web Developer</p>
+      <p class="section__text__p2 typing"></p>
       <div class="btn-container">
         <button class="btn btn-color-2" onclick="window.open('./assets/CV_WebDev_Ido Munthe.pdf')">
           Download CV
@@ -311,6 +311,21 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed('.typing', {
+      strings: ['Software Engineer', 'Problem Solver', 'Web Developer', 'Mobile Developer'],
+      startDelay: 500,
+      backDelay: 1000,
+      typeSpeed: 40,
+      backSpeed: 20,
+      loop: true,
+      
+    });
+  </script>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
