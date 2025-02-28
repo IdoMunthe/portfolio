@@ -18,19 +18,19 @@ if (currentTheme === "dark") {
 
 btn.addEventListener("click", function () {
   setTheme();
-})
+});
 
 btn2.addEventListener("click", function () {
   setTheme();
-})
+});
 
 function setTheme() {
-  let currentTheme = document.body.getAttribute("theme")
+  let currentTheme = document.body.getAttribute("theme");
 
   if (currentTheme === "dark") {
-    setLightMode()
+    setLightMode();
   } else {
-    setDarkMode()
+    setDarkMode();
   }
 }
 
@@ -39,8 +39,8 @@ function setDarkMode() {
   localStorage.setItem("theme", "dark");
 
   themeIcons.forEach((icon) => {
-    icon.src = icon.getAttribute("src-dark")
-  })
+    icon.src = icon.getAttribute("src-dark");
+  });
 }
 
 function setLightMode() {
@@ -48,6 +48,21 @@ function setLightMode() {
   localStorage.setItem("theme", "light");
 
   themeIcons.forEach((icon) => {
-    icon.src = icon.getAttribute("src-light")
-  })
+    icon.src = icon.getAttribute("src-light");
+  });
 }
+
+function linkToProject(url) {
+  if (!url) return;
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+const projectCards = document.querySelectorAll(".details-container");
+
+projectCards.forEach((project) => {
+  project.style.cursor = "pointer"
+  project.addEventListener("click", () => {
+    const url = project.getAttribute("data-url");
+    linkToProject(url);
+  });
+});
