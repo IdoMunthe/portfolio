@@ -80,6 +80,14 @@
     -ms-transform: scale(1);
     -o-transform: scale(1);
   }
+
+  #project-img5 {
+    transform: scale(1.9)  ;
+    -webkit-transform: scale(1.9)  ;
+    -moz-transform: scale(1.9)  ;
+    -ms-transform: scale(1.9)  ;
+    -o-transform: scale(1.9)  ;
+}
 }
 
 @media screen and (max-width: 600px) {

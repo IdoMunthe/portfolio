@@ -482,6 +482,10 @@ article .icon {
   object-fit: contain;
 }
 
+#project-img5 {
+  transform: scale(1.2);
+}
+
 .project-title {
   margin: 1rem;
   color: var(--secondary-color);
